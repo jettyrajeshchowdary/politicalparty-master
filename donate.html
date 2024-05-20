@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>donation for elections</title>
+</head>
+<body>
+<style type="text/css">
+	#d{
+		background-image: url("images/donating.jpg");
+		width: 100vw;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		display: flex;
+		justify-items: center;
+		align-content: center;
+	}
+	#btn{
+		width: 120px;
+		height: 40px;
+		background-color: #897b7b;
+		padding: 2px;
+		border:2px solid red ;
+		cursor: pointer;
+		font-weight: 600;
+		border-radius: 9px;
+		 transition:0.1s ease;
+	position: absolute;
+top: 67%;
+left: 15%;
+	}
+	#box{
+		position: absolute;
+		left: 38%;
+		width: 700px;
+		height: 800px;
+		
+		font-size: 20px;
+		
+	
+	}
+	#btn:hover{
+		background-color: #f2e5e5;
+		font-weight: 800;
+
+	}
+
+	#email{
+		height: 30px;
+		width: 200px;
+		border: 2px solid black;
+		border-radius: 4px;
+	}
+		#name{
+		height: 30px;
+		width: 200px;
+		border: 2px solid black;
+		border-radius: 4px;
+	}
+		#pay{
+		height: 30px;
+		width: 200px;
+		border: 2px solid black;
+		border-radius: 4px;
+	}
+		#no{
+		height: 30px;
+		width: 200px;
+		border: 2px solid black;
+		border-radius: 4px;
+	}
+	#p{
+		position: absolute;
+		top: 80%;
+	}
+</style>
+<div id="d">
+<div id="box">
+  <h1>Giving is the greatest act of grace!!</h1>
+  <p>You might be a stone, but together you can build bridges to a brighter tomorrow.</p>
+  <p>Donate now for welfare of university</p>
+  <form>
+  	<label for="email">EMAIL</label>
+  	<input type="email" id="email" required placeholder="abc@gmail.com">
+<br><br>
+  		<label for="name">NAME</label>
+  	<input type="text" id="name" required>
+<br><br>
+  		<label for="no">MOB NO.</label>
+  	<input type="numeric" id="no" required >
+<br><br>
+  		<label for="pay">AMOUNT</label>
+  	<input type="numeric" id="pay" required placeholder="in Rs"><br>
+<p><h3>Choose the mode of payment</h3></p>
+<input type="radio" name="payment">Debit card<br>
+<input type="radio" name="payment">Credit card<br>
+<input type="radio" name="payment">UPI<br>
+<input type="button" id="btn" value="DONATE NOW">
+  </form>
+<div id="p"><h4>This payment will directly go in the account of election committee of university.if any is occuring you can directly to the admin block.</h4></div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOTE LOGIN</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    /* *{
+        background: linear-gradient(120deg, #2980b9, #8e44ad);
+        z-index: -1;
+    } */
+    body {
+        background: linear-gradient(120deg, #2980b9, #8e44ad);
+         /* background-image: url(./Images/votecasting.jpeg); */
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    .heading {
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        font-family: monospace;
+        color: rgb(255, 255, 255);
+    }
+
+    .form {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60vw;
+        margin-left: 20%;
+        padding-left: 2%;
+        height: 58vh;
+        padding-bottom: 100px;
+        /* margin-top: 100; */
+        background-image: url(./Images/votecasting.jpeg);
+        z-index: +1;
+    }
+
+    .inputt {
+        width: 45%;
+        border: 2px solid white;
+        border-radius: 7px;
+        height: 25px;
+    }
+
+    #submit {
+        cursor: pointer;
+        border: 2px solid white;
+        border-radius: 20px;
+        height: 50px;
+        font-weight: bold;
+        font-size: xx-large;
+        color: rgb(58, 56, 56);
+        text-shadow: 2px 2px 5px rgb(58, 56, 56);
+        /* margin-right: 25px; */
+        margin-top: 30px;
+        display: block;
+        display: flex;
+        justify-content: center;
+        margin-left: 200px;
+        width: 50%;
+        /* border: 5px solid rgb(57, 57, 61); */
+    }
+
+    .text {
+        font-size: 20px;
+        width: fit-content;
+        font-family: cursive;
+        font-weight: bold;
+    }
+
+    .unit {
+        width: fit-content;
+        padding: 7px;
+        margin: 5px;
+        margin-left: 20%;
+    }
+
+    #NAME {
+        margin-top: 100px;
+        
+    }
+
+    .forimg {
+        width: 100%;
+        height: 100px;
+        background: url(./Images/votecasting.jpg);
+        z-index: 1;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .navigationicons {
+			/* border: 2px solid grey; */
+            display: inline-block;
+            
+            font-size: 50px;
+			margin: 7px;
+			padding: 7px;
+			text-shadow: 1px 1px 4px rgb(45, 34, 95);
+			transition: linear 0.25s;
+		}
+
+	.navigationicons:hover {
+			
+             transform: scale(0.5);
+            
+		}
+    
+        
+</style>
+
+<body>
+
+
+    <h1 class="heading">Enter the necessary details</h2>
+
+        <a href="index.html" class="navigationicons"><i class="fa fa-home"></i></a>
+
+        <div id="login">
+            <form class="form">
+
+                <div class="unit">
+                    <label id="NAME" class="text" for="login">NAME - </label>
+                    <input type="text" id="name" class="inputt" required><br>
+                </div>
+
+                <div class="unit">
+                    <label class="text" for="mail">EMAIL - </label>
+                    <input type="email" id="mail" class="inputt" required placeholder="abc@gmail.com"><br>
+                </div>
+                <div class="unit">
+                    <label class="text" for="b">BRANCH - </label>
+                    <input type="text" id="b" class="inputt" required><br>
+                </div>
+                <div class="unit">
+                    <label class="text" for="roll">ROLL NO. - </label>
+                    <input type="numeric" id="roll" class="inputt" required><br>
+                </div>
+                <div class="unit">
+                    <label class="text" for="no">PARTY NAME - </label>
+                    <input type="text" id="no" class="inputt" required><br>
+                </div>
+                <div class="unit">
+                    <label class="text" for="no">PARTY Id - </label>
+                    <input type="numeric" id="no" class="inputt" required><br>
+                </div>
+
+                <input id="submit" type="button" value="Submit" onclick="display()" />
+
+                <script src="hello.js">
+                </script>
+                <script type="text/javascript">
+	                    // confirm("Proceed further for Casting your Vote..!!")
+                </script>
+            </form>
+        </div>
+
+
+</body>
+
+</html>
